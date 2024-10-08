@@ -1,0 +1,65 @@
+.btn
+	+flex(inline-flex, center, center, nowrap)
+	height: 50px
+	max-width: 250px
+	padding: 8px 2em
+	border-radius: 0
+	border: 1px solid $main
+	+theme(main)
+	text-align: center
+	+ft(16, 16, 400)
+	transition: $trs
+
+	b
+		position: relative
+		overflow: hidden
+		font-weight: inherit
+	span
+		display: block
+		transition: all .25s linear
+		&:last-child
+			position: absolute
+			top: 100%
+			bottom: 0
+
+	&:hover, &:active, &:focus
+		background-color: darken($main, 10%)
+		color: $white
+		span
+			&:first-child
+				transform: translateY(-165%)
+			&:last-child
+				transform: translateY(0)
+				top: 0
+				margin: auto
+
+	&_top
+		+ps(fixed, (r, 16px), (b, 16px))
+		z-index: 1000
+		+sz(40px, 40px)
+		+theme(main)
+		border-radius: $brs
+		border: none
+
+	&-bd
+		@extend .btn
+		max-width: 100%
+		background: transparent
+		color: $main
+		border-color: $main
+	
+	&--link
+		text-transform: uppercase
+		text-decoration: underline
+		letter-spacing: 0.1em
+		+ft(16, 16, 500)
+
+
+.soc
+	+flex(flex, center, flex-start, nowrap)
+	gap: $gap2
+	a
+		transition: $trs
+		color: lighten($main, 30%)
+		&:hover, &:active, &:focus
+			color: $main

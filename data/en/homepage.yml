@@ -1,0 +1,131 @@
+---
+hero:
+  enable: true
+  title: "Prizma Lighting Studio in NY"
+  suptitle: "\\ Welcome to \\"
+  btn:
+    label:  Collections
+    url: "#form-main"
+    
+
+section_brands:
+  title: Trusted by 
+  items:
+    - img: './images/brands/b1.png'
+    - img: './images/brands/b2.png'
+    - img: './images/brands/b3.png'
+    - img: './images/brands/b6.png'
+    - img: './images/brands/b5.png'
+    - img: './images/brands/b4.png'
+
+section_features:
+  title: Features
+  subtitle: Most calendars are designed for teams. Slate is designed for freelancers
+  items:
+    - title: OpenType features Variable fonts
+      icon: 'i1'
+      desc: Slate helps you see how many more days you need to work to reach your financial goal.
+    - title: Design with real data
+      icon: 'i2'
+      desc: Slate helps you see how many more days you need to work to reach your financial goal.
+    - title: Fastest way to take action
+      icon: 'i3'
+      desc: Slate helps you see how many more days you need to work to reach your financial goal.
+   
+section_1:
+  title: Fastest way to organize
+  desc: Most calendars are designed for teams. Slate is designed for freelancers
+  btn:
+    label: Try For Free
+  img: './images/img1.png'
+ 
+section_2:
+  suptitle: At your fingertips
+  title: Lightning fast prototyping 
+  subtitle: "Subscribe to our Newsletter <br>Available exclusivery on Figmaland"
+  img: './images/img2.svg'
+
+section_brands:
+  title: Partners
+  desc: Most calendars are designed for teams. Slate is designed for freelancers
+  btn:
+    label: Try For Free
+  imgs:
+    - title: Client Name
+      img: './images/brands/b1.png'
+    - title: Client Name
+      img: './images/brands/b2.png'
+    - title: Client Name
+      img: './images/brands/b3.png'
+    - title: Client Name
+      img: './images/brands/b4.png'
+    - title: Client Name
+      img: './images/brands/b5.png'
+    - title: Client Name
+      img: './images/brands/b1.png'
+    - title: Client Name
+      img: './images/brands/b2.png'
+    - title: Client Name
+      img: './images/brands/b3.png'
+
+section_comments:
+  title: Testimonials
+  btn:
+    label: More Testimonials
+  items:
+    - name: Organize across
+      job: Ui designer
+      desc: Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+      ava: './images/comments/ava1.png'
+      img: './images/comments/logo1.png'
+    - name: Organize across
+      job: Ui designer
+      desc: Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+      ava: './images/comments/ava1.png'
+      img: './images/comments/logo1.png'
+    - name: Organize across
+      job: Ui designer
+      desc: Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+      ava: './images/comments/ava1.png'
+      img: './images/comments/logo1.png'
+
+section_plans:
+  title: Pricing
+  desc: Most calendars are designed for teams. Slate is designed for freelancers
+  items:
+    - type: FREE
+      desc: Organize across all apps by hand
+      cost: 0
+      btn:
+        label: Order Now
+      lists:
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+    - type: STANDARD
+      vip: true
+      desc: Organize across all apps by hand
+      cost: 10
+      btn:
+        label: Order Now
+      lists:
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+    - type: FREE
+      desc: Organize across all apps by hand
+      cost: 99
+      btn:
+        label: Order Now
+      lists:
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature
+        - item: Pricing Feature

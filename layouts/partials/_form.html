@@ -1,0 +1,36 @@
+<!-- BEGIN form -->
+<div id="form-main" class="form__wrap">
+	<form action="./" method="POST" class="form" id="reg_form" name="reg_form">
+		<!--PHP FORM ERROR-->
+		<div class="form__caption">
+			Contact Us
+		</div>
+		
+		<div>
+			<div class="form__row">
+				<label for="user_name">First Name</label>
+				<input type="text" name="firstName" placeholder="Your Name" required />
+				<p><span id="" class="form-error first-name-error"></span></p>
+			</div>
+	
+			<div class="form__row">
+				<label for="user_email">Your Email</label>
+				<input type="email" name="email" placeholder="Your E-mail Address" required />
+				<p><span id="" class="form-error email-error"></span></p>
+			</div>
+	
+			<div class="form__row">
+				<label for="user_email">Your Message</label>
+				<textarea name="use_msg" id="" placeholder="Your Message" rows="10"></textarea>
+				<p><span id="" class="form-error message-error"></span></p>
+			</div>
+		</div>
+
+		<button type="submit" value="Submit" class="btn secondary-solid-btn btn-block buttonSend" id="submitButton">
+			<b><span>Send</span><span>Send</span></b>
+		</button>
+	</form>
+</div>
+
+
+<!-- END form -->

@@ -1,0 +1,35 @@
+<!-- Footer -->
+<footer class="footer">
+    
+        <div class="footer__top">
+            <div class="container">
+
+            {{ .Site.Params.footer.copyright | markdownify }}
+
+
+            <nav class="footer__nav">
+                {{ range .Site.Menus.footer }}
+                <a href="{{ .URL }}" target="_self">
+                    {{ if .Pre }}
+                    <svg class="icon" width="14" height="14">
+                        <use xlink:href="#{{ .Pre }}"></use>
+                      </svg>
+                    {{ end }}
+                    
+                    {{ .Name }}
+                </a>
+                {{ end }}
+            </nav>
+
+        </div>
+        </div>
+    </div>
+</footer>
+<!--Main Footer-->
+
+
+
+
+
+
+

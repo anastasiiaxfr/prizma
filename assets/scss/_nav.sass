@@ -1,0 +1,229 @@
+.header
+	position: relative
+	z-index: 100
+	padding-top: $gap2
+	padding-bottom: $gap2
+
+.drawer
+	+ps(fixed, (t, 0), (l, 0))
+	z-index: 1000
+	+sz(100%, 100%)
+	padding: $gap3
+	background: $black
+	color: $white
+	height: 0
+	visibility: hidden
+	transform: translateX(-100%)
+	transition: transform 0.3s linear
+	overflow: hidden
+	overflow-y: scroll
+	&__container
+		display: flex
+		flex-direction: column
+		width: 100%
+	&__header
+		width: 100%
+		+flex(flex, center, space-between, nowrap)
+		padding-bottom: $gap3
+	&__content
+		+sz(100%, 100%)
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__nav
+		display: flex
+		flex-direction: column
+		margin-bottom: $gap3
+		a
+			padding: $gap3 0
+			+flex(flex, center, space-between, nowrap)
+			+ft(22, 22, 400)
+			text-transform: uppercase
+			border: 1px solid $white
+			border-width: 1px 0 0
+			&:first-child
+				border-top: 0
+			svg
+				color: $main
+	&.show
+		display: flex
+		visibility: visible
+		height: 100%
+		transform: translateX(0)
+
+	+maw($xs)
+		.contacts
+			text-align: center
+		.logo img
+			width: 80%
+		&__nav a
+			+ft(16, 16, 500)
+
+
+.navbar
+	+flex(flex, center, space-between, nowrap)
+	gap: $gap2
+	&__btns
+		+flex(inline-flex, center, center, nowrap)
+		gap: $gap2
+		margin-left: auto
+	&__toggler
+		border: none
+		padding: 0
+		color: inherit
+		background: transparent
+		&:hover, &:active, &:focus
+			box-shadow: none
+	&__nav
+		+flex(inline-flex, center, center, nowrap)
+		gap: 2em
+		a
+			position: relative
+			transition: $trs
+			text-transform: capitalize
+			
+			//+ft(18, 18, 400)
+			+ft(16, 16, 400, $ffHeading)
+			margin-top: 4px
+			.header &
+				opacity: 0.6
+
+			&::after 
+				content: ''
+				display: block
+				margin-top: 1px
+				+sz(100%, 1px)
+				background: $white
+				transition: width .3s
+			&:hover
+				color: $main
+				opacity: 1
+				text-decoration: none
+				&::after
+					width: 0
+			
+	+miw($sm)
+		&__btns
+			display: none
+		&__toggler
+			display: none
+	+maw($sm)
+		&__btns
+			display: flex
+		&__nav
+			display: none
+
+	
+
+.hero
+	position: relative
+	z-index: 1
+	&__wrap
+		background-image: url('../images/bg/hero.png')
+		position: relative
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		color: $white
+		z-index: 100
+	&__container
+		display: grid
+		gap: var(--gapSection)
+	&__row
+		display: grid
+		grid-template-columns: 1.75fr 1fr 1fr
+		gap: $gap4
+		&:last-child
+			align-items: flex-end
+			grid-template-columns: 1fr 1fr 1fr
+	&__col
+		&:last-child
+			grid-column: 3
+			text-align: right
+		strong
+			color: lighten($main, 30%)
+			font-weight: inherit
+		p:not([class])
+			+ft(16, 16*1.4, 300)
+			opacity: 0.8
+	&__soc
+		margin-top: $gap4
+		
+	+maw($sm)
+		&__wrap
+			background-position: 45% 100%
+		&__container
+			row-gap: 5em
+		&__row
+			&:nth-child(n)
+				grid-template-columns: 1fr
+		&__col
+			grid-column: 1px
+			&:last-child
+				grid-column: 1
+				grid-row: 2
+				text-align: left
+
+
+.footer
+	+theme(dark)
+	&__top
+		padding: $gap4 0
+		text-align: center
+		+ft(14, 14*1.4, 300)
+		.container
+			+flex(flex, center, space-between, wrap)
+			gap: $gap4
+			row-gap: $gap2
+	&__btm
+		padding: $gap4 0
+		+theme(main)
+	&__nav
+		+flex(flex, center, flex-start, wrap)
+		gap: $gap4
+		row-gap: $gap2
+		margin-left: auto
+		margin-right: 0
+		margin-top: 4px
+		a
+			position: relative
+			transition: $trs
+			+ft(16, 16, 400, $ffHeading)
+
+			&:hover, &:active, &:focus
+				color: $main
+				&::after
+					width: 100%
+			&::after 
+				content: ''
+				display: block
+				margin-top: 2px
+				+sz(0, 2px)
+				background: $main
+				transition: width .3s
+
+	+maw(1200)
+		&__nav
+			order: 2
+			margin-right: auto
+			margin-left: 0
+	// +maw($sm)
+	// 	&__top .container
+	// 		justify-content: center
+	// 		text-align: center
+	// 	&__nav
+	// 		justify-content: center
+
+
+
+.logo
+	+flex(inline-flex, center, flex-start, nowrap)
+	margin: 0
+	&::after
+		display: none
+
+.soc
+	a
+		transition: $trs
+		&:hover, &:active, &:focus
+			color: $main
