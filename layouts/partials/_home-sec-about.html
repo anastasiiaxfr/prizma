@@ -4,25 +4,25 @@
 {{ with $data.homepage.section_about }}
 <section class="section section--about">
     <div class="container">
-        
-       <div class="row row--1">
-        <div>
-            <hgroup>
-                <h2 class="subtitle">{{ .suptitle }}</h2>
-                <p class="h2">{{ .title }}</p>
-                <p class="lead">{{ .subtitle }}</p>
-            </hgroup>
-        </div>
-        <div>
-            <h3 class="h3">{{ .heading }}</h3>
+
+        <div class="row row--1">
             <div>
-                {{ .desc | markdownify }}
+                <hgroup>
+                    <h2 class="subtitle">{{ .suptitle }}</h2>
+                    <p class="h2">{{ .title }}</p>
+                    <p class="lead">{{ .subtitle }}</p>
+                </hgroup>
+            </div>
+            <div>
+                <h3 class="h3">{{ .heading }}</h3>
+                <div>
+                    {{ .desc | markdownify }}
+                </div>
             </div>
         </div>
-       </div>
 
-       <div class="stats">
-        {{ range .stat }}
+        <div class="stats">
+            {{ range .stat }}
             <div class="stat">
                 <div class="stat__val">
                     {{ .val | markdownify }}
@@ -31,10 +31,10 @@
                     {{ .title }}
                 </div>
             </div>
-        {{ end }}
-       </div>
-       
-      
+            {{ end }}
+        </div>
+
+
     </div>
 </section>
 {{ end }}

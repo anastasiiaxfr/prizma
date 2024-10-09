@@ -3,23 +3,25 @@
 {{ $data := index $.Site.Data }}
 
 
-<div>
-  <!-- BEGIN section -->
-  {{- partial "header.html" . -}}
-  <!-- END section -->
-</div>
-<article class="page__single">
-  <div class="hero__single">
-    <div class="container">
-      <h1>{{ .Title }}</h1>
+<main>
+  <div>
+    <!-- BEGIN section -->
+    {{- partial "header.html" . -}}
+    <!-- END section -->
+  </div>
+  <article class="page__single">
+    <div class="hero__single">
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+      </div>
     </div>
-  </div>
-
-  <div class="container">
-    {{ .Content }}
-  </div>
-
-</article>
+  
+    <div class="container">
+      {{ .Content }}
+    </div>
+  
+  </article>
+</main>
 
 
 

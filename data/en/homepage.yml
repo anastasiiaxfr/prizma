@@ -135,3 +135,11 @@ section_services_gallery:
     - img: './images/img8.webp'
     - img: './images/img9.webp'
     - img: './images/img10.webp'
+
+section_contacts:
+  suptitle: "\\ Contact us \\"
+  title: Ready to Transform Your Space With Us?
+  subtitle: Get a full-scale analysis of your project and recommended solutions.
+  contact: "Call us <a href='tel:+12345678900' class='text--note'>+1 (234) 567 89 00</a> or write us <a href='mailto:prizma-studio@email.com' class='text--note'>prizma-studio@email.com</a>"
+  btn:
+    label: Get a Quote

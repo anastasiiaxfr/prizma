@@ -5,12 +5,12 @@
 <body lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" class="page__body">
 
 
-  <main class="page__wrapper">
+  <div class="page__wrapper">
 
     {{- partial "preloader.html" . -}}
     {{- block "main" . }}{{- end }}
 
-  </main>
+  </div>
 
 
   {{- partial "_btn-top.html" . -}}
