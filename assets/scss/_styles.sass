@@ -49,8 +49,11 @@ a
 		padding-top: var(--gapSection)
 		padding-bottom: var(--gapSection)
 		background-color: $black
+		overflow: hidden
 		p:not([class])
 			@extend %p
+		&-gallery
+			margin: 0
 	
 .row
 	display: grid
@@ -114,3 +117,58 @@ a
 	+maw($xs)
 		&s
 			grid-template-columns: 1fr
+
+.gallery
+	display: grid
+	gap: $gap2
+	padding: $gap2
+	&__item
+		position: relative
+		margin: 0
+		overflow: clip
+		&-overlay	
+			position: absolute
+			inset: 0
+			background: rgba($black, 0.75)
+			display: grid
+			align-items: center
+			gap: $gap2
+			padding: $gap4
+			text-align: center
+			transition: $trs
+			opacity: 0
+			visibility: hidden
+			p
+				@extend %p
+				transform: translateY(2em)
+				transition: $trs
+				transition-delay: 0.1s
+		&:hover
+			.gallery__item-overlay
+				opacity: 1
+				visibility: visible
+				p
+					transform: translateY(0)
+			.gallery__item-title
+				transform: translateY(0)
+			
+		&-img
+			position: relative
+			padding-top: 100%
+			& > *
+				position: absolute
+				inset: 0
+				+sz(100%, 100%)
+		&-title
+			@extend .h4
+			margin: 0
+			transform: translateY(2em)
+			transition: $trs
+	&--1
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		+maw($lg)
+			p
+				display: none
+		+maw($xs)
+			p
+				display: block
