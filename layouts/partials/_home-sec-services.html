@@ -1,10 +1,10 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.homepage.section_services }}
-{{ with $data.homepage.section_services }}
-<section class="section section--services">
-    <div class="container">
 
+<section class="section section--services">
+    {{ if $data.homepage.section_services }}
+    {{ with $data.homepage.section_services }}
+    <div class="container">
         <div class="row row--1">
             <div>
                 <hgroup>
@@ -18,7 +18,7 @@
                 <p class="text--note">
                     <svg class="icon" width="24" height="24">
                         <use xlink:href="#lamp"></use>
-                    </svg> 
+                    </svg>
                     <b>{{ .note }}</b>
                 </p>
             </div>
@@ -34,15 +34,18 @@
                     <h3 class="service__title">{{ .item }}</h3>
                     <ul class="service__list">
                         {{ range .features }}
-                            <li>{{ .feature }}</li>
+                        <li>{{ .feature }}</li>
                         {{ end }}
                     </ul>
                 </div>
             </article>
             {{ end }}
         </div>
-
     </div>
+    {{ end }}
+    {{ end }}
+    <!-- BEGIN section -->
+    {{- partial "_home-sec-services-gallery.html" . -}}
+    <!-- END section -->
+
 </section>
-{{ end }}
-{{ end }}

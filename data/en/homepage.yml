@@ -128,3 +128,10 @@ section_services:
        - feature: Smart Dimmer Switches
        - feature: Smart Lighting Kits
       icon: './images/pic8.svg'
+
+section_services_gallery:
+  gallery:
+    - img: './images/img7.webp'
+    - img: './images/img8.webp'
+    - img: './images/img9.webp'
+    - img: './images/img10.webp'
