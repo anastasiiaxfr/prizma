@@ -63,3 +63,68 @@ section_features_gallery:
     - title: Residential Spaces
       desc: We specialize in crafting personalized lighting schemes that reflect the lifestyle and preferences of homeowners.
       img: './images/img6.webp'
+
+
+section_services:
+  suptitle: "\\ services \\"
+  title: Discover Power of Perfect Lighting
+  subtitle: Welcome to our diverse world of lighting solutions.
+  desc: From ambient to task lighting, our expertise spans a wide range of styles and functionalities to suit every space and requirement.
+  note: Explore our curated selection of lighting options.
+  items:
+    - item: Ceiling Fixtures
+      features: 
+       - feature: Chandeliers
+       - feature: Flush Mount
+       - feature: Pendant Lights
+       - feature: Track Lighting
+      icon: './images/pic1.svg'
+    - item: Floor Lamps
+      features: 
+       - feature: Arc Lamps
+       - feature: Tripod Lamps
+       - feature: Task Lamps
+       - feature: Torchiere Lamps
+      icon: './images/pic2.svg'
+    - item: Wall Sconces
+      features: 
+       - feature: Swing Arm Sconces
+       - feature: Candle Sconces
+       - feature: Picture Lights
+       - feature: Uplight Sconces
+      icon: './images/pic3.svg'
+    - item: Wall Mounted Lights
+      features: 
+       - feature: Wall Washers
+       - feature: Vanity Lights
+       - feature: Reading Lights
+       - feature: Outdoor Wall Lights
+      icon: './images/pic4.svg'
+    - item: Kitchen Island Lights
+      features: 
+       - feature: Linear Pendant Lights
+       - feature: Globe Pendant Lights
+       - feature: Mini Pendant Lights
+       - feature: Recessed Lighting
+      icon: './images/pic5.svg'
+    - item: Modular Lighting
+      features: 
+       - feature: Modular Track Systems
+       - feature: Magnetic LED Panels
+       - feature: Modular Wall Lights
+       - feature: Adjustable Clusters
+      icon: './images/pic6.svg'
+    - item: LED Lighting
+      features: 
+       - feature: Recessed Downlights
+       - feature: Strip Lights
+       - feature: Pendant Fixtures
+       - feature: Wall Washers
+      icon: './images/pic7.svg'
+    - item: Smart Lighting
+      features: 
+       - feature: Smart Bulbs
+       - feature: Smart Light Strips
+       - feature: Smart Dimmer Switches
+       - feature: Smart Lighting Kits
+      icon: './images/pic8.svg'

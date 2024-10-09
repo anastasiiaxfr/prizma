@@ -5,7 +5,7 @@ disableLanguages = ["ru"]
 paginate = "6"
 relativeURLs = true
 summaryLength = "50"
-title = "FigamLand"
+title = "Prizma"
 # [Languages.en]
 # contentDir = "content/en"
 # home = "Home"
@@ -40,13 +40,13 @@ enableRobotsTXT = true
 CIO_site_id = "XXX"
 GTM = "GTM-WHBQ3BV"
 develop = "Anastasiia_Berest"
-author = "FigamLand"
+author = "Prizma"
 
 logo = "./images/logo.svg"
 logo_dark = "./images/logo.svg"
-logo_description = "FigamLand"
+logo_description = "Prizma"
 
-site_name = "FigamLand"
+site_name = "Prizma"
 site_url = "#"
 
 description = "Is a simple ecnosystem of interconnected crypto products designed for the mass adoption of cryptocurrencies."
@@ -89,7 +89,7 @@ link = "#"
 
 ############################# footer #################################
 [params.footer]
-    copyright = "FigamLand invest &copy; 2024"
+    copyright = "Prizma invest &copy; 2024"
 
 
 [[menu.footer]]

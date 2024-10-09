@@ -36,6 +36,8 @@ h1, h2, h3, h4, h5, h6
     font-family: $ffHeading
    
 .subtitle
+    margin-top: 0
+    margin-bottom: $gap1
     text-transform: uppercase
     letter-spacing: 0.2em
     +ft(12, 12, 500)
@@ -50,6 +52,11 @@ h1, h2, h3, h4, h5, h6
         color: $main
     &--note
         color: lighten($main, 20%)
+        display: flex
+        align-items: center
+        gap: $gap1
+        svg
+            color: $main
 
 
 .check

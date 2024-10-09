@@ -54,6 +54,12 @@ a
 			@extend %p
 		&-gallery
 			margin: 0
+	&--services
+		margin: 0
+		padding-top: var(--gapSection)
+		padding-bottom: var(--gapSection)
+		p:not([class])
+			@extend %p
 	
 .row
 	display: grid
@@ -82,6 +88,8 @@ a
 	&--1
 		grid-template-columns: 1fr 1fr
 		gap: var(--gapSection)
+	&--2
+		background-color: $black
 	+maw($md)
 		&--1
 			grid-template-columns: 1fr
@@ -172,3 +180,36 @@ a
 		+maw($xs)
 			p
 				display: block
+
+.service
+	display: grid
+	grid-template-columns: auto 1fr
+	gap: $gap2
+	&__icon
+		img
+			width: auto
+			max-width: 80px
+	&__title
+		@extend .subtitle
+		margin-bottom: $gap2
+	&__list
+		list-style-type: none
+		padding: 0
+		li
+			@extend %p
+	&s
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+		gap: $gap4
+		margin-top: var(--gapSection)
+		margin-bottom: var(--gapSection)
+	+maw($sm)
+		&s
+			grid-template-columns: 1fr 1fr
+		&__list li
+			+ft(14, 14*1.4, 300)
+	+maw($xs)
+		&s
+			grid-template-columns: 1fr
+		&__list li
+			+ft(16, 16*1.4, 300)
