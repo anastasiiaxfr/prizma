@@ -1,12 +1,5 @@
-*
-    font-family: $ffText, $ffBack
-    
-h1, h2, h3, h4, h5, h6
-    font-family: $ffHeading
-
-
 h1, .h1
-    +ft(60, 60*1.2, 600)
+    +ft(76, 76*1.2, 600)
     margin-top: $gap2
     +maw($lg)
         font-size: 55px
@@ -17,17 +10,17 @@ h1, .h1
        
    
 h2, .h2
-    +ft(36, 36*1.2, 700)
+    +ft(62, 62*1.2, 600)
     margin-bottom: $gap4
-    strong
-        display: block
-        color: $main
+    margin-top: 0
+    +maw($lg)
+        +ft(42, 42*1.4, 600)
     +maw($md)
-        +ft(30, 30*1.4, 700)
+        +ft(38, 38*1.4, 600)
     +maw($sm)
-        +ft(24, 24*1.4, 700)
+        +ft(34, 34*1.4, 600)
     +maw($xs)
-        +ft(24, 24*1.4, 700)
+        +ft(28, 28*1.4, 600)
   
 
 h3, .h3
@@ -35,12 +28,20 @@ h3, .h3
     +maw($md)
         +ft(18, 18*1.4, 500)
 
+h1, h2, h3, h4, h5, h6
+    font-family: $ffHeading
+   
 .subtitle
     text-transform: uppercase
-    letter-spacing: 0.1em
-    +ft(14, 14, 500)
+    letter-spacing: 0.2em
+    +ft(12, 12, 500)
     color: $main
+
+.lead
+    +ft(20, 20*1.2, 500)
+    opacity: 0.8
 
 .text
     &--main
         color: $main
+

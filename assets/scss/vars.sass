@@ -6,19 +6,10 @@ $light: #eaecf6
 $main: #d78c43
 $primary: #FF0000
 
-$color_1: #F6F7F9
-$color_2: #858EAD
-$color_3: #3D445C
-$color_4: #0C225B
-$color_6: #F6F9FC
-$color_7: #F6F8F7
+
 
 
 $grad: linear-gradient(125deg, transparent 25%, #9353FF 50%, #DDFF54)
-$grad1: linear-gradient(94.81deg, #9353FF -9.25%, #DDFF54 109.41%)
-$grad2: linear-gradient(#0000FF, #3E3EED)
-
-
 
 $bxsd: 0px 4px 6px -2px rgba(#111827, 0.05), 0px 12px 16px -4px rgba(#111827, 0.1)
 
@@ -223,6 +214,7 @@ $i: 0
 // +rfz(1120, 320, 12, 40)
 
 \:root
+	font-family: $ffText, $ffBack
 	--gapSection: 75px
 	--sectionMt: 50px
 	--mt1: 32px
@@ -238,19 +230,3 @@ $i: 0
 		transform: translateY(10px)
 
 
-%mask
-	mask: linear-gradient($white 0 0) content-box,linear-gradient($white 0 0)
-	mask-composite: exclude
-	-webkit-mask: linear-gradient($white 0 0) content-box,linear-gradient($white 0 0)
-	-webkit-mask-composite: xor
-	content: ""
-	position: absolute
-	z-index: -1
-	inset: 0
-	padding: 2px
-
-%text-grad
-    color: inherit
-    //background: $grad3
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent

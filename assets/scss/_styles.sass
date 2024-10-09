@@ -3,10 +3,8 @@ body
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: top left
-	font-family: $ffText, $ffBack
 
 a
-	font-family: inherit
 	&:hover, &:focus, &:active, &:focus-visible
 		color: inherit
 		outline: none
@@ -14,9 +12,8 @@ a
 		box-shadow: none
 
 .container
-	max-width: 1146px
-	&-sm
-		max-width: 869px
+	max-width: 1210px
+
 
 .page
 	&__wrapper
@@ -42,5 +39,41 @@ a
 		margin: 0
 		padding-top: var(--gapSection)
 		padding-bottom: var(--gapSection)
+	&--about
+		p:not([class])
+			opacity: 0.6
+			+ft(16, 16*1.5, 400)
 	
 	
+.row
+	&--1
+		display: grid
+		grid-template-columns: 1fr 1fr 
+		gap: var(--gapSection)
+		row-gap: $gap4
+	+maw($md)
+		&--1
+			grid-template-columns: 1fr
+
+.stat
+	padding: $gap4
+	border: 2px solid rgba($white, 0.1)
+	&__title
+		opacity: 0.7
+		+ft(18, 18, 300)
+	&__val
+		+ft(50, 50, 700)
+		margin-bottom: $gap2
+		strong
+			color: $main
+	&:last-child
+		border-radius: 0 6pc 0 0
+
+	&s
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		gap: $gap4
+		margin-top: $gap4
+	+maw($xs)
+		&s
+			grid-template-columns: 1fr

@@ -11,12 +11,12 @@
 	padding: $gap3
 	background: $black
 	color: $white
-	height: 0
-	visibility: hidden
-	transform: translateX(-100%)
 	transition: transform 0.3s linear
 	overflow: hidden
 	overflow-y: scroll
+	height: 0
+	visibility: hidden
+	transform: translateX(-100%)
 	&__container
 		display: flex
 		flex-direction: column
@@ -76,14 +76,14 @@
 			box-shadow: none
 	&__nav
 		+flex(inline-flex, center, center, nowrap)
-		gap: 2em
+		gap: 1.5em
 		a
 			position: relative
 			transition: $trs
 			text-transform: capitalize
 			
 			//+ft(18, 18, 400)
-			+ft(16, 16, 400, $ffHeading)
+			+ft(14, 14, 400, $ffHeading)
 			margin-top: 4px
 			.header &
 				opacity: 0.6
@@ -131,7 +131,7 @@
 		gap: var(--gapSection)
 	&__row
 		display: grid
-		grid-template-columns: 1.75fr 1fr 1fr
+		grid-template-columns: 2.5fr 1fr 1fr
 		gap: $gap4
 		&:last-child
 			align-items: flex-end
