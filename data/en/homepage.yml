@@ -32,3 +32,22 @@ section_about:
       title: "Clients in the USA"
     - val: "599"
       title: "Large-scale projects"
+
+section_features:
+  img: './images/img2.webp'
+  suptitle: "\\ features \\"
+  title: What Makes Our Offering Seamless
+  subtitle: Looking for a lightning solution for your home or office?
+  desc: At Prizma Studio, we're dedicated to illuminating your spaces with creativity and precision. With our expertise in lightning design for residential and office environments, we're your top choice for bringing your vision to life with innovative and tailored solutions.
+  list:
+    - item: We listen to our clients;
+    - item: We factor in the architect's intent;
+    - item: We take your budget into account;
+    - item: We are attentive to details;
+    - item: We design lighting to be seen by everyone.
+  note: Trust us to light up your world with brilliance.
+  btn:
+    label: More About Us
+
+
+

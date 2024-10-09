@@ -12,7 +12,7 @@ a
 		box-shadow: none
 
 .container
-	max-width: 1210px
+	max-width: 1218px
 
 
 .page
@@ -28,12 +28,14 @@ a
 			margin-bottom: $gap2
 			+ft(24, 24, 700)
 
+%p
+	opacity: 0.6
+	+ft(16, 16*1.5, 400)
 
 .section
 	position: relative
 	margin-top: var(--gapSection)
 	margin-bottom: var(--gapSection)
-	//background: url('../images/bg2.svg') no-repeat 50%/cover
 	z-index: 1
 	&--hero
 		margin: 0
@@ -41,19 +43,54 @@ a
 		padding-bottom: var(--gapSection)
 	&--about
 		p:not([class])
-			opacity: 0.6
-			+ft(16, 16*1.5, 400)
-	
+			@extend %p
+	&--features
+		margin: 0
+		padding-top: var(--gapSection)
+		padding-bottom: var(--gapSection)
+		background-color: $black
+		p:not([class])
+			@extend %p
 	
 .row
+	display: grid
+	gap: var(--gapSection)
+	row-gap: $gap4
 	&--1
-		display: grid
 		grid-template-columns: 1fr 1fr 
+	&--2
+		grid-template-columns: 1fr 1fr
+		div
+			grid-column: 2
+	+maw($md)
+		&--1, &--2
+			grid-template-columns: 1fr
+
+.bg
+	position: absolute
+	inset: 0
+	z-index: -1
+	+sz(100%, 100%)
+	display: grid
+	& *
+		height: 100%
+		width: auto
+		object-fit: cover
+	&--1
+		grid-template-columns: 1fr 1fr
 		gap: var(--gapSection)
-		row-gap: $gap4
 	+maw($md)
 		&--1
 			grid-template-columns: 1fr
+			&::after
+				content: ''
+				position: absolute
+				inset: 0
+				display: block
+				+sz(100%, 100%)
+				background: rgba($black, 0.75)	
+
+
 
 .stat
 	padding: $gap4

@@ -44,4 +44,23 @@ h1, h2, h3, h4, h5, h6
 .text
     &--main
         color: $main
+    &--note
+        color: lighten($main, 20%)
 
+
+.check
+    padding: 0
+    margin: $gap4 auto
+    li
+        position: relative
+        +flex(flex, center, flex-start, nowrap)
+        gap: $gap2
+        margin-top: $gap1
+        margin-bottom: $gap1
+        span
+            opacity: 0.7
+        &::before
+            content: ''
+            +sz(20px, 20px)
+            min-width: 20px
+            background: url('../images/icon/check.svg') no-repeat 50% / contain
