@@ -203,3 +203,18 @@ section_subscribe:
   title: Subscribe Now
   subtitle: Get our latest news, special offers, and design ideas.
 
+section_catalog:
+  suptitle: "\\ catalogs \\"
+  title: Shaping Light, Shaping Spaces
+  subtitle: Take a look at our selection of top picks you've been searching for. We've got everything for your lighting needs.
+  btn:
+    label: Our Store
+  catalog:
+    - title: '"Wooden Life" Catalog'
+      desc: Explore our comprehensive catalog of lighting fixtures, featuring a wide range of styles and designs to illuminate every space beautifully.
+      btn:
+        label: download pdf
+    - title: 'Outdoor Lighting Catalog'
+      desc: Explore our outdoor lighting catalog, showcasing durable and stylish fixtures designed to enhance your outdoor living areas with elegance.
+      btn:
+        label: download pdf

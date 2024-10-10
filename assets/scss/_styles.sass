@@ -138,6 +138,11 @@ a
 .col
 	display: grid
 	gap: $gap2
+
+.my
+	&-8
+		margin-top: $gap8
+		margin-bottom: $gap8
 	
 .bg
 	position: absolute
@@ -409,3 +414,25 @@ a
 		margin-top: 6em
 		display: grid
 		gap: $gap3
+
+.catalog
+	&__title
+		@extend .h4
+		margin-bottom: $gap2
+	&__desc
+		@extend %p
+		margin-bottom: $gap2
+	&s
+		display: grid
+		gap: $gap2
+		.divider:last-child
+			display: none
+
+.divider
+	+sz(100%, 1px)
+	opacity: 1
+	border: none
+	background-color: rgba($white, 0.15)
+
+
+		

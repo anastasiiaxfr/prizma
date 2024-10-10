@@ -49,10 +49,16 @@
 		border-color: $main
 	
 	&--link
+		display: inline-flex
+		align-items: center
+		gap: $gap2
 		text-transform: uppercase
 		text-decoration: underline
 		letter-spacing: 0.1em
 		+ft(16, 16, 500)
+
+		svg
+			color: lighten($main, 20%)
 
 
 .soc
