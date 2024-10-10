@@ -87,3 +87,20 @@
 		&:hover, &:active, &:focus
 			background-color: $white
 			color: $black
+
+.contacts
+	display: flex
+	flex-direction: column
+	justify-content: center
+	gap: $gap2
+	background-color: lighten($black, 5%)
+	border-radius: $brs 10pc $brs $brs
+	padding: $gap4
+	.contact
+		display: flex
+		gap: $gap2
+		text-align: left
+		span
+			@extend %p
+		svg
+			color: $main

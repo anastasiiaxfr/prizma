@@ -12,7 +12,17 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url><url>
+    <loc>//localhost:55123/projects/</loc>
+    <lastmod>2023-02-23T13:51:52+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url><url>
     <loc>//localhost:55123/news/articles-2023-02-23-12-03/</loc>
+    <lastmod>2023-02-23T13:51:52+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>//localhost:55123/projects/articles-2023-02-23-12-03/</loc>
     <lastmod>2023-02-23T13:51:52+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -23,6 +33,11 @@
     <priority>0.6</priority>
   </url><url>
     <loc>//localhost:55123/news/articles-2023-02-22-12-54/</loc>
+    <lastmod>2023-02-22T14:29:08+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>//localhost:55123/projects/articles-2023-02-22-12-54/</loc>
     <lastmod>2023-02-22T14:29:08+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -42,7 +57,17 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url><url>
+    <loc>//localhost:55123/projects/articles-2023-02-16-14-01/</loc>
+    <lastmod>2023-02-16T15:59:02+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url><url>
     <loc>//localhost:55123/news/articles-2023-02-06-09-00/</loc>
+    <lastmod>2023-02-06T10:59:18+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>//localhost:55123/projects/articles-2023-02-06-09-00/</loc>
     <lastmod>2023-02-06T10:59:18+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
