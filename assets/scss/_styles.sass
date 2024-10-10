@@ -75,8 +75,7 @@ a
 	&--collections
 		background-color: $black
 		margin: 0
-		padding-top: var(--gapSection)
-		padding-bottom: var(--gapSection)
+		
 		p:not([class])
 			@extend %p
 	&--news
@@ -84,6 +83,19 @@ a
 		margin: 0
 		padding-top: 7em
 		padding-bottom: 7em
+	&--subscribe
+		z-index: 1
+		background: $black url('../images/bg/bg-cta-subscribe.png') no-repeat 50% / cover
+		margin: 0
+		padding-top: 7em
+		padding-bottom: 7em
+		&::after
+			content: ''
+			position: absolute
+			inset: 0
+			+sz(100%, 100%)
+			background-color: rgba($black, 0.8)
+			z-index: -1
 
 .row
 	display: grid
@@ -102,11 +114,21 @@ a
 	&--4
 		grid-template-columns: 1fr 1fr 	
 		align-items: center
+	&--5
+		grid-template-columns: 1fr 1fr 	
+		align-items: center
 	+maw($md)
-		&--1, &--2, &--4
+		&--1, &--2, &--4, &--5
 			grid-template-columns: 1fr
 		&--2
 			gap: 0
+		&--5
+			text-align: center
+			& *
+				margin-left: auto
+				margin-right: auto
+			& > div
+				width: 100%	
 	+maw($sm)
 		&--3
 			grid-template-columns: 1fr

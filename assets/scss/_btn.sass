@@ -63,3 +63,27 @@
 		color: lighten($main, 30%)
 		&:hover, &:active, &:focus
 			color: $main
+
+.subscribe
+	display: grid
+	gap: $gap2
+	max-width: 500px
+	width: 100%
+	input, button
+		width: 100%
+		padding: $gap1 $gap2
+		height: 50px
+		border: 0
+		transition: $trs
+	input
+		color: $white
+		background-color: rgba($white, 0.1)
+		
+	button
+		background-color: $main
+		color: $white
+		+ft(14, 14, 600)
+		cursor: pointer
+		&:hover, &:active, &:focus
+			background-color: $white
+			color: $black
