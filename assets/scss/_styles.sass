@@ -79,6 +79,11 @@ a
 		padding-bottom: var(--gapSection)
 		p:not([class])
 			@extend %p
+	&--news
+		background: $black url('../images/bg/bg-news.svg') no-repeat right center / cover
+		margin: 0
+		padding-top: 7em
+		padding-bottom: 7em
 
 .row
 	display: grid
@@ -94,8 +99,11 @@ a
 		grid-template-columns: 1.5fr 1fr
 		div
 			grid-column: 1
+	&--4
+		grid-template-columns: 1fr 1fr 	
+		align-items: center
 	+maw($md)
-		&--1, &--2
+		&--1, &--2, &--4
 			grid-template-columns: 1fr
 		&--2
 			gap: 0
@@ -103,6 +111,10 @@ a
 		&--3
 			grid-template-columns: 1fr
 
+.col
+	display: grid
+	gap: $gap2
+	
 .bg
 	position: absolute
 	inset: 0
@@ -135,12 +147,9 @@ a
 				+sz(100%, 100%)
 				background: rgba($black, 0.75)	
 	
-
-
-.col
-	display: grid
-	gap: $gap2
-	
+.img
+	&--1
+		border-radius: 0 15pc 0 0 
 
 .stat
 	padding: $gap4
@@ -355,3 +364,24 @@ a
 		img
 			margin-left: auto
 			margin-right: auto	
+
+.news
+	&__date
+		color: lighten($main, 20%)
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		+ft(14, 14, 400)
+	&__title
+		@extend .h4
+		text-decoration: underline
+		margin-bottom: $gap2
+		margin-top: $gap1
+		transition: $trs
+		&:hover
+			text-decoration: none
+	&__desc
+		@extend %p
+	&__wrapper
+		margin-top: 6em
+		display: grid
+		gap: $gap3
