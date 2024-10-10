@@ -165,3 +165,20 @@ section_projects:
       imgs:
         - img: './images/img13.webp'
         - img: './images/img14.webp'
+
+section_collections:
+  img: './images/img15.webp'
+  suptitle: "\\ Collections \\"
+  title: Lighting Solutions
+  subtitle: Materials & processes we use to make our lighting collections.
+  desc: "At Prizma Studio, we take pride in crafting our own lightning items using only the finest materials, ensuring both quality and aesthetics are never compromised. Our dedication to excellence is evident in the meticulous selection of materials, including:"
+  items:
+    - title: Silk Printing
+      img: './images/p1.webp'
+      desc: Harnessing the elegance and versatility of silk printing, we adorn our lighting fixtures with intricate patterns and designs that elevate their visual appeal.
+    - title: Polymeric Material
+      img: './images/p2.webp'
+      desc: With an eye for innovation, our designers utilize versatile polymeric materials to bring our lighting designs to life with modern flair and durability.
+    - title: Forged Metal
+      img: './images/p3.webp'
+      desc: For timeless elegance and enduring strength, we turn to forged metal in crafting our lighting masterpieces. Each piece is meticulously handcrafted by skilled artisans.

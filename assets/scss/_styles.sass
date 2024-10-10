@@ -72,7 +72,14 @@ a
 		background-position: 0 50%
 		p:not([class])
 			@extend %p
-	
+	&--collections
+		background-color: $black
+		margin: 0
+		padding-top: var(--gapSection)
+		padding-bottom: var(--gapSection)
+		p:not([class])
+			@extend %p
+
 .row
 	display: grid
 	gap: var(--gapSection)
@@ -111,9 +118,15 @@ a
 		gap: var(--gapSection)
 	&--2
 		background-color: $black
+	&--3
+		grid-template-columns: 1fr 1fr
+		column-gap: var(--gapSection)
+		div
+			grid-column: 2
 	+maw($md)
-		&--1
+		&--1, &--3
 			grid-template-columns: 1fr
+			gap: 0
 			&::after
 				content: ''
 				position: absolute
@@ -281,6 +294,7 @@ a
 	border-width: 1px 0 0
 	&:last-child
 		border-bottom: 0
+		padding-bottom: 0
 	&s
 		margin-top: $gap6
 	&__gallery
@@ -320,3 +334,24 @@ a
 				display: none
 		&__gallery
 			grid-template-columns: 1fr
+
+
+.collection
+	display: grid
+	grid-template-columns: auto 1fr
+	gap: $gap2
+	margin: 0
+	&s
+		display: grid
+		gap: $gap2
+		margin-top: $gap4
+	&__title
+		margin-bottom: $gap2
+		@extend .h4
+	+maw($xs)
+		grid-template-columns: 1fr
+		justify-content: center
+		text-align: center	
+		img
+			margin-left: auto
+			margin-right: auto	
