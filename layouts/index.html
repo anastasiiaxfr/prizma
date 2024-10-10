@@ -1,12 +1,6 @@
 {{ define "main" }}
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.homepage }}
-<style>
-</style>
-{{ end }}
-
-
 {{ "<!-- Hero Section -->" | safeHTML }}
 {{ "<!-- End of Hero Section -->" | safeHTML }}
 
@@ -41,6 +35,7 @@
 <!-- END section -->
 
 <!-- BEGIN section -->
+{{- partial "_home-sec-projects.html" . -}}
 <!-- END section -->
 
 <!-- BEGIN section -->

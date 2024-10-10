@@ -143,3 +143,25 @@ section_contacts:
   contact: "Call us <a href='tel:+12345678900' class='text--note'>+1 (234) 567 89 00</a> or write us <a href='mailto:prizma-studio@email.com' class='text--note'>prizma-studio@email.com</a>"
   btn:
     label: Get a Quote
+
+section_projects:
+  suptitle: "\\ projects \\"
+  title: "Where Brilliance Meets Design"
+  heading: Shaping Light, Shaping Spaces
+  desc: We offer lighting solutions for residential, commercial, and other spaces. Explore some of our projects below.
+  btn:
+    label: More projects
+  projects:
+    - title: 432 Broadway
+      date: 12 September, 2023
+      desc: In this completed lighting design project, we've orchestrated a harmonious interplay of ceiling and floor lamps to illuminate and elevate the ambiance of a living room space. Through thoughtful consideration of both form and function, Prizma Studio has crafted a lighting design that not only meets the practical needs of the space but also enhances its aesthetic appeal.
+      imgs:
+        - img: './images/img11.webp'
+        - img: './images/img12.webp'
+
+    - title: Luminous Harmony
+      date: 24 april, 2024
+      desc: Luminous Harmony is a showcase of innovative lighting design implemented at the prestigious Riverfront Hotel in Chicago. This project was designed to create an ambiance that complements the luxurious interior while enhancing the architectural features of the hotel.
+      imgs:
+        - img: './images/img13.webp'
+        - img: './images/img14.webp'

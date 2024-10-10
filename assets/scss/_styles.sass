@@ -271,3 +271,52 @@ a
 			grid-template-columns: 1fr
 		&__list li
 			+ft(16, 16*1.4, 300)
+
+.project
+	display: grid
+	grid-template-columns: 1fr 2fr
+	gap: $gap4
+	padding: $gap8 0
+	border: 1px solid rgba($white, 0.1)
+	border-width: 1px 0 0
+	&:last-child
+		border-bottom: 0
+	&s
+		margin-top: $gap6
+	&__gallery
+		display: grid
+		grid-template-columns: 2fr 1fr
+		gap: $gap2
+		align-items: stretch
+		margin-top: $gap4
+		img
+			height: 100%
+			object-fit: cover
+	&__title
+		@extend .h3
+	&__public
+		color: lighten($main, 20%)
+		+ft(12, 12, 400)
+		letter-spacing: 0.1em
+		text-transform: uppercase
+	&__desc
+		@extend %p
+		display: grid
+		grid-template-columns: 1fr auto
+		gap: var(--gapSection)
+		align-items: center
+
+		svg
+			color: $main
+			transition: $trs
+			&:hover
+				transform: translateX(5px)
+	+maw($md)
+		grid-template-columns: 1fr
+	+maw($xs)
+		&__desc
+			grid-template-columns: 1fr
+			a
+				display: none
+		&__gallery
+			grid-template-columns: 1fr
