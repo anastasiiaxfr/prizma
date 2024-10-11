@@ -3,6 +3,7 @@ body
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: top left
+	font-family: $ffHeading, $ffBack
 
 a
 	&:hover, &:focus, &:active, &:focus-visible
@@ -456,9 +457,3 @@ a
 			inset: 0
 			+sz(100%, 100%)
 			object-fit: cover
-	&__container
-		display: flex
-		gap: $gap2
-	+maw($sm)
-		&__container
-			grid-template-columns: 1fr
