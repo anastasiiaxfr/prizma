@@ -435,4 +435,30 @@ a
 	background-color: rgba($white, 0.15)
 
 
-		
+.slide
+	&__title
+		@extend .h4
+		margin-bottom: $gap2
+	&__cat
+		color: lighten($main, 20%)
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		+ft(12, 12, 400)
+		margin-bottom: $gap2
+	&__data
+		opacity: 0.6
+	&__img
+		position: relative
+		padding-top: 100%
+		margin-bottom: $gap2
+		& > *
+			position: absolute
+			inset: 0
+			+sz(100%, 100%)
+			object-fit: cover
+	&__container
+		display: flex
+		gap: $gap2
+	+maw($sm)
+		&__container
+			grid-template-columns: 1fr

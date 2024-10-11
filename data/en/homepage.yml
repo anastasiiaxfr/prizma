@@ -218,3 +218,24 @@ section_catalog:
       desc: Explore our outdoor lighting catalog, showcasing durable and stylish fixtures designed to enhance your outdoor living areas with elegance.
       btn:
         label: download pdf
+  slides:
+    - title: Aurora Lamp
+      cat: Classic Collection
+      year: 2023
+      img: './images/sld1.webp'
+    - title: Luminous Haven
+      cat: Wooden Life Collection
+      year: 2024
+      img: './images/sld2.webp'
+    - title: Wooden Blocks
+      cat: Wooden Life Collection
+      year: 2024
+      img: './images/sld3.webp'
+    - title: Cake in the Ocean
+      cat: Ceiling fixtures
+      year: 2022
+      img: './images/sld4.webp'
+    - title: Arretia Lamp
+      cat: Bedside lamps
+      year: 2022
+      img: './images/sld5.webp'

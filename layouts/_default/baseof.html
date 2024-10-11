@@ -56,14 +56,23 @@
   {{ end }}
 
 
- <link
+ <!-- <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css"
 />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+ -->
 
+ <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 
+ <script type="text/javascript">
+  const emblaNode = document.querySelector('.embla')
+  const options = { loop: false }
+  const emblaApi = EmblaCarousel(emblaNode, options)
+
+  console.log(emblaApi.slideNodes()) // Access API
+</script>
 
 
   {{ $script := resources.Get "js/script.js" | minify }}

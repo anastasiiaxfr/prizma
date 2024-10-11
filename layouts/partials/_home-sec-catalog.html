@@ -40,6 +40,29 @@
         </div>
         <hr class="divider my-8">
         
+
+        <div class="slides embla">
+            <div class="slide__container embla__container">
+            {{ range .slides }}
+                <article class="slide embla__slide">
+                    <div class="slide__img">
+                        <img src="{{ .img | relURL }}" alt="{{ .title }}">
+                    </div>
+                    <div class="slide__content">
+                        <h3 class="slide__title">
+                            {{ .title }}
+                        </h3>
+                        <div class="slide__cat">
+                            {{ .cat }}
+                        </div>
+                        <small class="slide__data">
+                            {{ .year }}
+                        </small>
+                    </div>
+                </article>
+            {{ end }}
+        </div>
+        </div>
         
     </div>
     {{ end }}
