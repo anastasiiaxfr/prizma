@@ -110,3 +110,32 @@
 			@extend %p
 		svg
 			color: $main
+
+
+.form
+	input, textarea
+		width: 100%	
+		padding: $gap2 $gap2
+		border: 1px solid darken($dark, 3%)
+		background-color: darken($dark, 3%)
+		color: $white
+		resize: none
+		&:focus, &:active, &:focus-visible
+			border-color: $main
+			appearance: none
+			box-shadow: none
+			outline: none
+	button
+		max-width: 100%
+		width: 100%
+		margin-top: $gap4
+		cursor: pointer
+	&__row
+		margin-top: $gap2
+		margin-bottom: $gap2
+	&__wrap
+		background-color: $dark
+		padding: $gap8
+		max-width: 600px
+		margin-left: auto
+		margin-right: auto

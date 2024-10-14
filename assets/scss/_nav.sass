@@ -115,6 +115,32 @@
 .hero
 	position: relative
 	z-index: 1
+	&__single
+		position: relative
+		z-index: 1
+		margin: 0
+		padding-top: var(--gapSection)
+		padding-bottom: var(--gapSection)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: bootom center
+		background-color: $black
+		//background-attachment: fixed
+		text-align: center
+		&::after
+			content: ''
+			position: absolute
+			inset: 0
+			z-index: -1
+			+sz(100%, 100%)
+			background-color: rgba($black, 0.8)
+		h1
+			+ft(62, 62, 600)
+			color: $main
+			margin-bottom: $gap2
+			margin-top: 0
+
+
 	&__wrap
 		background-image: url('../images/bg/hero.png')
 		position: relative

@@ -136,7 +136,7 @@ parent = "Navigation"
 weight = 4
 
 [[menu.footer]]
-URL = "/"
+URL = "/contacts"
 name = "Contacts"
 parent = "Navigation"
 weight = 4
@@ -198,6 +198,6 @@ name = "Collections"
 weight = 4
 
 [[menu.header]]
-URL = "/"
+URL = "/contacts"
 name = "Contacts"
 weight = 5
