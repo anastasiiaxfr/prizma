@@ -2,6 +2,7 @@
 .faq
 	width: 100%
 	margin-top: $gap4
+	border-collapse: collapse
 	&__num
 		+ft(35, 35, 800)
 		width: 100px
@@ -19,13 +20,13 @@
 		
 	&__term
 		+ft(24, 28, 700)
-		padding: 44px 0
+		padding: $gap2 0
 		user-select: none
 
 	&__row
 		border-top: 1px solid rgba($white, 0.2)
 		cursor: pointer
-		&.active
+		&--active
 			.faq__cta
 				svg
 					&:first-child
@@ -46,8 +47,9 @@
 
 	&__body
 		+ft(20, 24, 300)
-		padding: 0 0 38px 
+		padding: 0 0 $gap4
 		display: none
+		@extend %p
 	
 	+maw($md)
 		&__term

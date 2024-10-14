@@ -1,6 +1,6 @@
 
 <meta charset="utf-8" />
-<title>{{ .Title | truncate 60 }}</title>
+<title>{{ .Site.Params.site_name }} | {{ .Title | truncate 60 }}</title>
 <meta name="description" content="{{ .Site.Params.description | truncate 160 }}" />
 
 <!-- canonical link tag -->

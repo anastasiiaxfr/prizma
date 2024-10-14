@@ -1,3 +1,11 @@
+%overlay
+	content: ''
+	position: absolute
+	inset: 0
+	+sz(100%, 100%)
+	background-color: rgba($black, 0.8)
+	z-index: -1
+
 body
 	+theme(dark)
 	background-repeat: no-repeat
@@ -20,6 +28,7 @@ a
 	&__wrapper
 		overflow: hidden
 	&__single
+		background: $black
 		padding-top: var(--gapSection)
 		padding-bottom: var(--gapSection)
 
@@ -28,6 +37,19 @@ a
 			margin-top: $gap4
 			margin-bottom: $gap2
 			+ft(24, 24, 700)
+	&__desc
+		display: grid
+		grid-template-columns: 0.75fr 2fr
+		gap: $gap4
+		padding-top: $gap4
+		padding-bottom: $gap4
+		border-top: 1px solid rgba($white, 0.2)
+		&:last-child
+			border-bottom: 1px solid rgba($white, 0.2)
+	+maw($md)
+		&__desc
+			grid-template-columns: 1fr
+		
 
 %p
 	color: rgba($white, 0.6)
@@ -38,6 +60,7 @@ a
 	margin-top: var(--gapSection)
 	margin-bottom: var(--gapSection)
 	z-index: 1
+	overflow: hidden
 	&--hero
 		margin: 0
 		padding-top: var(--gapSection)
@@ -93,12 +116,7 @@ a
 		padding-top: 7em
 		padding-bottom: 7em
 		&::after
-			content: ''
-			position: absolute
-			inset: 0
-			+sz(100%, 100%)
-			background-color: rgba($black, 0.8)
-			z-index: -1
+			@extend %overlay
 	&--contatcs-cta
 		margin: 0
 		padding-top: 7em
@@ -116,6 +134,49 @@ a
 			position: absolute
 			inset: 0
 			+sz(100%, 100%)
+	&--teams
+		margin: 0
+		padding-top: var(--gapSection)
+		padding-bottom: var(--gapSection)
+		background-color: $black
+		background-image: url('../images/bg/bg-about-team.svg')
+		background-repeat: no-repeat
+		background-position: left bottom
+	&--video
+		position: relative
+		margin: 0
+		padding-top: 25%
+		padding-bottom: var(--gapSection)
+		background-color: $black
+		background-image: url('../images/bg/bg-video.png')
+		background-repeat: no-repeat
+		background-position: left bottom
+		background-attachment: fixed
+		&::after
+			@extend %overlay
+			background-color: rgba($black, 0.4)
+		hgroup
+			display: grid
+			gap: $gap3
+			.h3
+				margin: 0
+	&--stat
+		margin: 0
+		padding-top: $gap4
+		padding-bottom: $gap4
+		background-color: darken($dark, 6%)
+	&--services
+		background-color: $black
+	&--cta
+		margin: 0
+		padding-top: 10em
+		padding-bottom: 10em
+		background-color: $black
+		background-image: url('../images//bg/bg-cta.png')
+		background-repeat: no-repeat
+		background-attachment: fixed
+		&::after
+			@extend %overlay
 
 
 .row
@@ -143,6 +204,8 @@ a
 			grid-template-columns: 1fr
 		&--2
 			gap: 0
+			div:last-child
+				grid-column: 1
 		&--5
 			text-align: center
 			& *
@@ -354,9 +417,17 @@ a
 	border-width: 1px 0 0
 	&:last-child
 		border-bottom: 0
-		padding-bottom: 0
+		margin-bottom: $gap8
+	&:first-child
+		border-top: none
 	&s
 		margin-top: $gap6
+		.project
+			&:last-child
+				margin-bottom: 0
+			&:first-child
+				border-top: 1px solid rgba($white, 0.1)
+
 	&__gallery
 		display: grid
 		grid-template-columns: 2fr 1fr
@@ -478,3 +549,158 @@ a
 			inset: 0
 			+sz(100%, 100%)
 			object-fit: cover
+
+
+.award
+	position: relative
+	&__bg
+		position: relative
+		padding-top: 75%
+		& > *
+			position: absolute
+			inset: 0
+			+sz(100%, 100%)
+			filter: grayscale(1)
+		&::after
+			content: ''
+			position: absolute
+			inset: 0
+			+sz(100%, 100%)
+			background-color: rgba($black, 0.8)
+	&__content
+		position: absolute
+		inset: 0
+		padding: $gap4
+		+flex(flex, center, center, nowrap)
+		flex-direction: column
+	&__title
+		@extend .h4
+		b
+			color: lighten($main, 20%)
+			font-weight: inherit
+	&__desc
+		@extend %p
+	&s
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+		gap: $gap4
+		margin-top: $gap4
+	+maw($sm)
+		&s
+			grid-template-columns: 1fr
+
+.team
+	display: grid
+	grid-template-columns: 1fr 1fr
+	align-items: stretch
+	background-color: $dark
+	border-radius: 0 10pc 0 0
+	overflow: hidden
+	&:nth-child(n+3), &:nth-child(n+4)
+		.team
+			&__logo
+				grid-column: 2
+				grid-row: 1
+			&__content	
+				grid-column: 1
+				grid-row: 1
+	&s
+		display: grid
+		grid-template-columns: 1fr 1fr
+		align-items: stretch
+		gap: $gap4
+		margin-top: $gap4
+	&__title
+		@extend .h4
+	&__info
+		@extend .text--note
+		+ft(16, 16, 500)
+		margin-bottom: $gap2
+	&__desc
+		@extend %p
+		margin-bottom: $gap2
+	&__logo
+		position: relative
+		padding-top: 50%
+		& > *
+			position: absolute
+			inset: 0
+			display: block
+			+sz(100%, 100%)
+			object-fit: cover
+			object-position: center top
+	&__content
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		padding: $gap4
+		text-align: left
+	+maw($md)
+		display: flex
+		flex-direction: column
+		&__logo
+			padding-top: 100%
+	+maw($sm)
+		display: grid
+		&:nth-child(n)
+		.team
+			&__logo
+				grid-column: 2
+				grid-row: 1
+			&__content	
+				grid-column: 1
+				grid-row: 1
+		&s
+			grid-template-columns: 1fr
+	+maw($xs)
+		display: flex
+
+.workflow
+	&__title
+		@extend .h4
+		display: flex
+		justify-content: center
+		gap: $gap1
+		margin-top: $gap2
+	&__desc
+		@extend %p
+		margin-bottom: $gap4
+	&s
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		align-items: stretch
+		gap: $gap4
+		margin-top: $gap4
+	+maw($md)
+		&s
+			grid-template-columns: 1fr 1fr
+	+maw($xs)
+		&s
+			grid-template-columns: 1fr
+
+.timeline
+	&__title
+		color: $main
+		+ft(40, 40, 500)
+	&__divider
+		opacity: 0.1
+		margin-top: $gap2
+		margin-bottom: $gap2
+	&__content
+		@extend %p
+	&s
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		gap: $gap4
+		padding-left: $gap4
+		padding-right: $gap4
+	+maw($lg)
+		&s
+			grid-template-columns: repeat(3, 1fr)
+	+maw($sm)
+		&s
+			grid-template-columns: 1fr 1fr
+	+maw($xs)
+		&s
+			grid-template-columns: 1fr

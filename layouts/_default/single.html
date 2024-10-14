@@ -5,6 +5,14 @@
     {{- partial "header.html" . -}}
     <!-- END section -->
 </div>
+    <!-- BEGIN section -->
+    <section class="hero__single" style="background-image:url('../../../images/bg/bg-single.png')">
+        <div class="container">
+          <h1>{{ .Title }}</h1>
+          {{- partial "_breadcrumbs.html" . -}}
+        </div>
+      </section>
+      <!-- END section -->
 <article class="page__single">
 
     <div class="container">
@@ -13,8 +21,54 @@
                 <!-- {{ .Title }} -->
             </h2>
             <!-- {{ .Content }} -->
+
+            <section class="page__desc">
+                <h2>
+                    Brief Overview:
+                </h2>
+                <div>
+                    <p class="lead">
+                        {{ .Params.lead }}
+                    </p>
+                    <div>
+                        {{ .Content }}
+                    </div>
+                </div>
+            </section>
+            <section class="page__desc">
+                <h2>
+                    Key Features:
+                </h2>
+                <div>
+                    <ul class="check">
+                        {{ range .Params.features }}
+                            <li>{{ .item }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </section>
+            <section class="page__desc">
+                <h2>
+                    Technical Details:
+                </h2>
+                <div>
+                    {{ range .Params.details }}
+                        <p>{{ .item | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </section>
         </div>
     </div>
 
 </article>
+
+<!-- BEGIN section -->
+{{- partial "_single-cta.html" . -}}
+<!-- END section -->
+
+<style>
+    header {
+        background-color: #000;
+    }
+</style>
 {{ end }}

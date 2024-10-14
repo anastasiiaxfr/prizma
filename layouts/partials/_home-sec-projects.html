@@ -25,31 +25,7 @@
 
         <div class="projects">
             {{ range .projects }}
-                <article class="project">
-                    <a href="#">
-                        <div class="project__title">
-                            {{ .title }}
-                        </div>
-                        <small class="project__public">{{ .date }}</small>
-                    </a>
-                    <div class="project__conternt">
-                        <div class="project__desc">
-                           <div>
-                            {{ .desc }}
-                           </div>
-                         <a href="#">
-                            <svg class="icon" width="48" height="48">
-                                <use xlink:href="#arr-r"></use>
-                            </svg>
-                         </a>
-                        </div>
-                        <div class="project__gallery">
-                            {{ range .imgs }}
-                                <img src="{{ .img | relURL }}" alt="{{ .title }}">
-                            {{ end }}
-                        </div>
-                    </div>
-                </article>
+            {{- partial "_project-item.html" . -}}
             {{ end }}
         </div>
 
