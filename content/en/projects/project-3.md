@@ -8,6 +8,15 @@ imgs:
   - img: './images/projects/p3-1.webp'
 desc: Step into the captivating world of cinema with Prizma Studio's completed lighting design project for a luxurious movie theater. In this exquisite space, we've skillfully blended ceiling and wall lighting to create an immersive and visually stunning experience for moviegoers.
 
+cite:
+  desc: |
+    "The expertise and creativity of the Prizma Studio team have transformed our hotel into a beacon of luxury and comfort. Their attention to detail and innovative use of space and light have significantly enhanced both the guest experience and our brand's aesthetic appeal."
+  author: emma Carter, CEO,
+  job: Riverfront Hotel
+  ava: './images/single/cite/ava1.webp'
+
+
+
 features:
   - item: Energy-efficient LED lighting throughout the hotel;
   - item: Custom-designed fixtures tailored to the hotel’s unique themes;

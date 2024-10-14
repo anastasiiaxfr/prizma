@@ -95,3 +95,26 @@ h1, h2, h3, h4, h5, h6
         &--active
             text-decoration: underline
             color: $white
+
+.cite
+    display: grid
+    grid-template-columns: 0.75fr 2fr
+    align-items: center
+    gap: $gap4
+    &__ava
+        img
+            display: block
+            +sz(200px, auto)
+            border-radius: 50%
+            object-fit: cover
+    &__desc
+        +ft(24, 24*1.2, 500)
+        font-style: italic
+        margin-bottom: $gap4
+    &__info
+        text-transform: capitalize
+        text-align: right
+    +maw($md)
+        grid-template-columns: 1fr
+        &__info
+            text-align: left

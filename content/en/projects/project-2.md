@@ -8,6 +8,14 @@ imgs:
   - img: './images/projects/p2-1.webp'
 desc: Prizma Studio has transformed this space into a radiant sanctuary where beauty thrives and clients are enveloped in an atmosphere of luxury and relaxation. From the gentle glow of the ceiling fixtures to the subtle warmth of the table lamps, every element of this project has been curated to enhance the salon experience and leave a lasting impression on all who enter.
 
+cite:
+  desc: |
+    "The expertise and creativity of the Prizma Studio team have transformed our hotel into a beacon of luxury and comfort. Their attention to detail and innovative use of space and light have significantly enhanced both the guest experience and our brand's aesthetic appeal."
+  author: emma Carter, CEO,
+  job: Riverfront Hotel
+  ava: './images/single/cite/ava1.webp'
+
+
 features:
   - item: Energy-efficient LED lighting throughout the hotel;
   - item: Custom-designed fixtures tailored to the hotel’s unique themes;

@@ -8,6 +8,15 @@ imgs:
   - img: './images/projects/p1-1.webp'
 desc: In this completed lighting design project, we've orchestrated a harmonious interplay of ceiling and floor lamps to illuminate and elevate the ambiance of a living room space. Through thoughtful consideration of both form and function, Prizma Studio has crafted a lighting design that not only meets the practical needs of the space but also enhances its aesthetic appeal.
 
+cite:
+  desc: |
+    "The expertise and creativity of the Prizma Studio team have transformed our hotel into a beacon of luxury and comfort. Their attention to detail and innovative use of space and light have significantly enhanced both the guest experience and our brand's aesthetic appeal."
+  author: emma Carter, CEO,
+  job: Riverfront Hotel
+  ava: './images/single/cite/ava1.webp'
+
+
+
 features:
   - item: Energy-efficient LED lighting throughout the hotel;
   - item: Custom-designed fixtures tailored to the hotel’s unique themes;

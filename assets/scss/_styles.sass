@@ -37,6 +37,19 @@ a
 			margin-top: $gap4
 			margin-bottom: $gap2
 			+ft(24, 24, 700)
+	&__demo
+		position: relative
+		display: grid
+		grid-template-columns: 0.75fr 2fr
+		align-items: stretch
+		gap: $gap4
+		margin-bottom: $gap4
+		img
+			height: 400px
+			width: 100%
+			object-fit: cover
+			&:last-child
+				border-radius: 0 10pc 0 0
 	&__desc
 		display: grid
 		grid-template-columns: 0.75fr 2fr
@@ -44,11 +57,15 @@ a
 		padding-top: $gap4
 		padding-bottom: $gap4
 		border-top: 1px solid rgba($white, 0.2)
-		&:last-child
+		&:last-of-type
+			margin-bottom: $gap4
 			border-bottom: 1px solid rgba($white, 0.2)
 	+maw($md)
-		&__desc
+		&__desc, &__demo
 			grid-template-columns: 1fr
+		&__demo
+			img:first-child
+				display: none
 		
 
 %p

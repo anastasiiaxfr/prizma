@@ -22,6 +22,15 @@
             </h2>
             <!-- {{ .Content }} -->
 
+            <div class="page__demo">
+                {{ $images := .Params.imgs }}
+                {{ $count := len $images }}
+                {{ range $i := (seq 0 (sub $count 1)) }}
+                    {{ $img := index $images (sub $count (add $i 1)) }}
+                    <img src="{{ $img.img | relURL }}" alt="{{ $img.title }}">
+                {{ end }}
+            </div>
+
             <section class="page__desc">
                 <h2>
                     Brief Overview:
@@ -57,6 +66,23 @@
                     {{ end }}
                 </div>
             </section>
+            <bloquote class="cite">
+                <div class="cite__ava">
+                    <img src="{{ .Params.cite.ava | relURL }}
+                    " alt="">
+                </div>
+                <div class="cite__content">
+                    <div class="cite__desc">
+                        {{  .Params.cite.desc }}
+                    </div>
+                    <div class="cite__info">
+                        <span>{{ .Params.cite.author }}</span>
+                        <span class="text--main">
+                            {{ .Params.cite.job }}
+                        </span>
+                    </div>
+                </div>
+            </bloquote>
         </div>
     </div>
 

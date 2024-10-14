@@ -8,6 +8,13 @@ imgs:
   - img: './images/projects/p4-1.webp'
 desc: Luminous Harmony is a showcase of innovative lighting design implemented at the prestigious Riverfront Hotel in Chicago. This project was designed to create an ambiance that complements the luxurious interior while enhancing the architectural features of the hotel.
 
+cite:
+  desc: |
+    "The expertise and creativity of the Prizma Studio team have transformed our hotel into a beacon of luxury and comfort. Their attention to detail and innovative use of space and light have significantly enhanced both the guest experience and our brand's aesthetic appeal."
+  author: emma Carter, CEO,
+  job: Riverfront Hotel
+  ava: './images/single/cite/ava1.webp'
+
 features:
   - item: Energy-efficient LED lighting throughout the hotel;
   - item: Custom-designed fixtures tailored to the hotel’s unique themes;
