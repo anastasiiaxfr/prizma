@@ -1,6 +1,6 @@
 ---
 title: 432 Broadway Dogecoin
-type: project
+type: projects
 date: 12 september, 2023
 cat: cat1
 imgs: 

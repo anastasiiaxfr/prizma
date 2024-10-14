@@ -6,7 +6,7 @@
     <!-- END section -->
 </div>
     <!-- BEGIN section -->
-    <section class="hero__single" style="background-image:url('../../../images/bg/bg-single.png')">
+    <section class="hero__single" style="background-image:url('../../../images/bg/bg-single.webp')">
         <div class="container">
           <h1>{{ .Title }}</h1>
           {{- partial "_breadcrumbs.html" . -}}
@@ -23,11 +23,8 @@
             <!-- {{ .Content }} -->
 
             <div class="page__demo">
-                {{ $images := .Params.imgs }}
-                {{ $count := len $images }}
-                {{ range $i := (seq 0 (sub $count 1)) }}
-                    {{ $img := index $images (sub $count (add $i 1)) }}
-                    <img src="{{ $img.img | relURL }}" alt="{{ $img.title }}">
+                {{ range .Params.imgs }}
+                    <img src="{{ .img | relURL }}" alt="ALT">
                 {{ end }}
             </div>
 

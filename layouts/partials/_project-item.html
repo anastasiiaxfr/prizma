@@ -3,15 +3,11 @@
         <div class="project__title">
             {{ if .Title }}
             {{ .Title }}
-            {{ else }}
-            {{ .title }}
             {{ end }}
         </div>
         <small class="project__public">
             {{ if .Params.date }}
             {{ .Params.date }}
-            {{ else }}
-            {{ .date }}
             {{ end }}
         </small>
     </a>
@@ -20,8 +16,6 @@
             <div>
                 {{ if .Params.desc }}
                 {{ .Params.desc }}
-                {{ else }}
-                {{ .desc }}
                 {{ end }}
             </div>
             <a href="{{ .Permalink }}">
@@ -33,10 +27,6 @@
         <div class="project__gallery">
             {{ if .Params.imgs }}
             {{ range .Params.imgs }}
-            <img src="{{ .img | relURL }}" alt="{{ .Title }}">
-            {{ end }}
-            {{ else }}
-            {{ range .imgs }}
             <img src="{{ .img | relURL }}" alt="{{ .Title }}">
             {{ end }}
             {{ end }}

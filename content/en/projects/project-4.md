@@ -1,6 +1,6 @@
 ---
 title: Luminous Harmony
-type: project
+type: projects
 date: 24 april, 2024
 cat: cat1
 imgs: 

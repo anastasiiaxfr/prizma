@@ -1,6 +1,6 @@
 ---
 title: IQ Movie Theater
-type: project
+type: projects
 date: 10 march, 2024
 cat: cat1
 imgs: 

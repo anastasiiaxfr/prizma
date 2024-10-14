@@ -1,6 +1,6 @@
 ---
 title: Clazzy Beauty Salon
-type: project
+type: projects
 date: 05 January, 2024
 cat: cat1
 imgs: 

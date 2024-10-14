@@ -1,10 +1,10 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.homepage.section_projects }}
-{{ with $data.homepage.section_projects }}
+
 <section class="section section--projects">
     <div class="container">
-
+        {{ if $data.homepage.section_projects }}
+        {{ with $data.homepage.section_projects }}
         <div class="row row--1">
             <div>
                 <hgroup>
@@ -22,15 +22,15 @@
                 </p>
             </div>
         </div>
-
+        {{ end }}
+        {{ end }}
         <div class="projects">
-            {{ range .projects }}
-            {{- partial "_project-item.html" . -}}
+            {{ $projects := .Site.Pages }}
+            {{ range first 2 (where $projects "Section" "projects") }}
+            {{ partial "_project-item.html" . }}
             {{ end }}
         </div>
 
 
     </div>
 </section>
-{{ end }}
-{{ end }}

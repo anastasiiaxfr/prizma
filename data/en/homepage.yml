@@ -53,16 +53,16 @@ section_features_gallery:
   gallery:
     - title: Commercial Projects
       desc: We excel in creating captivating lighting designs that enhance the ambiance and elevate the customer experience.
-      img: './images/img3.webp'
+      img: './images/features/img3.webp'
     - title: Healthcare Projects
       desc: We focus on providing soothing and functional lighting solutions to promote healing and well-being in hospitals.
-      img: './images/img4.webp'
+      img: './images/features/img4.webp'
     - title: Corporate Offices
       desc: Our designs strike the perfect balance between functionality and aesthetics to create inspiring workspaces.
-      img: './images/img5.webp'
+      img: './images/features/img5.webp'
     - title: Residential Spaces
       desc: We specialize in crafting personalized lighting schemes that reflect the lifestyle and preferences of homeowners.
-      img: './images/img6.webp'
+      img: './images/features/img6.webp'
 
 
 section_services:
@@ -131,10 +131,10 @@ section_services:
 
 section_services_gallery:
   gallery:
-    - img: './images/img7.webp'
-    - img: './images/img8.webp'
-    - img: './images/img9.webp'
-    - img: './images/img10.webp'
+    - img: './images/services/img7.webp'
+    - img: './images/services/img8.webp'
+    - img: './images/services/img9.webp'
+    - img: './images/services/img10.webp'
 
 section_contacts:
   suptitle: "\\ Contact us \\"
